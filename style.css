@@ -1,0 +1,121 @@
+/* colors used:
+Primary color (Blue): #94CEFD
+Background color (White): #F5F5F3
+Text color (Black): #060C14
+*/
+
+@font-face {
+font-family: 'eighties';
+src: url('fonts/eighties-regular.otf') format('otf');
+}
+
+ p {
+   font-family: 'courier-new';
+   src: url('fonts/courier-new.ttf') format('ttf');
+   }
+
+  body {
+    background-color: #F5F5F3;
+    font-family: font-family: 'courier-new';
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #060C14
+  }
+
+  h1 {
+    font-family: 'eighties';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 66px;
+  }
+
+  h2 {
+    font-family: 'eighties';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 55px;
+  }
+
+  h3 {
+    font-family: 'eighties';
+font-style: normal;
+font-weight: 400;
+font-size: 43px;
+line-height: 47px;
+  }
+
+  h4 {
+    font-family: 'eighties';
+font-style: normal;
+font-weight: 400;
+font-size: 38px;
+line-height: 42px;
+  }
+img {
+width: 100%;
+}
+
+a {
+color: #94CEFD;
+text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #94CEFD;
+  text-decoration: underline;
+}
+
+a:visited {
+color: #FAB531;
+}
+
+.button {
+display: inline-block;
+background-color: #94CEFD
+color: #060C14
+font-weight: 400
+padding: 10.0923px 50.4615px;
+width: 106px;
+height: 41px;
+left: 1px;
+top: 67px;
+}
+
+.button: hover {
+  display: inline-block;
+  background: #94CEFD;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #060C14
+  font-weight: 400
+  padding: 10.0923px 50.4615px;
+  width: 106px;
+  height: 41px;
+  left: 1px;
+  top: 67px;
+  }
+
+.button.contact {
+background-color: #94CEFD
+color: #060C14
+padding: 13px 76px;
+width: 164px;
+height: 41px;
+left: 1px;
+top: 64px;
+}
+
+.button.contact: hover {
+background-color: #94CEFD
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: #060C14
+padding: 13px 76px;
+width: 164px;
+height: 41px;
+left: 1px;
+top: 64px;
+}

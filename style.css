@@ -6,12 +6,16 @@ Text color (Black): #060C14
 
 @font-face {
 font-family: 'eighties';
-src: url('fonts/eighties-regular.otf') format('otf');
+src: url('fonts/eighties-regular.otf') format('truetype');
 }
 
 @font-face {
 font-family: 'courier-new';
-src: url('fonts/courier-new.ttf') format('ttf');
+src: url('fonts/courier-new.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
 }
 
   body {
@@ -26,7 +30,6 @@ color: #060C14;
 
   p {
     font-family: 'courier-new';
-    src: url('fonts/courier-new.ttf') format('ttf');
     }
 
   h1 {
@@ -75,6 +78,7 @@ color: #060C14;
 display: inline-block;
 background-color: #94CEFD;
 color: #060C14;
+font-family: 'eighties';
 font-weight: 400;
 padding: 10px;
 border-radius: 2px;
@@ -112,14 +116,108 @@ left: 1px;
 top: 64px;
 }
 
+header{
+  position: fixed;
+  background-color: #94CEFD;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}
+
 .logo {
 font-family: 'eighties';
+text-align: center;
 font-weight: 400;
 font-size: 50px;
 line-height: 55px;
 margin: 10px 0 0 10px;
+max-width: 250px;
+
 }
 
 .logo:hover {
 text-decoration: none;
+}
+
+nav > ul > li > a {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #060C14
+}
+
+nav > ul > li > a :visited {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #060C14
+}
+
+nav > ul > li > a :hover {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #94CEFD
+}
+
+nav> ul > li > a :active {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #060C14
+}
+
+#hero {
+  background-color: #94CEFD;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0,67em 0;
+
+}
+
+/* Layout Styling */
+
+main {
+  padding-top:133px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+#work row {
+margin: 25px 0; border-bottom: 1px;
+}
+
+#hero h1, p {
+  text-align: center;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact ul {
+  text-align: center;
+}
+
+#contact button contact {
+  text-align: center;
 }

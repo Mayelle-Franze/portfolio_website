@@ -60,13 +60,13 @@ width: 100%;
 }
 
 a {
-color: #94CEFD;
+color: #060C14;
 text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #94CEFD;
+  color: #060C14;
   text-decoration: underline;
 }
 
@@ -117,11 +117,13 @@ top: 64px;
 }
 
 header{
-  position: fixed;
+  width: 100%; z-index: 2
+  margin: auto;
   background-color: #94CEFD;
   text-align: center;
-  padding: 10px 0;
-  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  padding: 10px 5px 15px 5px;
+  box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+  position: fixed;
 }
 
 .logo {
@@ -139,40 +141,12 @@ max-width: 250px;
 text-decoration: none;
 }
 
-nav > ul > li > a {
-  list-style-type: none;
+nav > ul > li {
   display: inline-block;
   padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #060C14
-}
-
-nav > ul > li > a :visited {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #060C14
-}
-
-nav > ul > li > a :hover {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #94CEFD
-}
-
-nav> ul > li > a :active {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #060C14
+list-style-type: none;
+font-family: 'courier-new';
+text-align: center;
 }
 
 #hero {
@@ -180,12 +154,6 @@ nav> ul > li > a :active {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-}
-
-#hero h1 {
-  margin: 0;
-  padding: 0,67em 0;
-
 }
 
 /* Layout Styling */
@@ -220,4 +188,28 @@ margin: 25px 0; border-bottom: 1px;
 
 #contact button contact {
   text-align: center;
+}
+
+/* Medium devices (640px and larger) */
+@media only screen and (min width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+}
+
+
+/* Large devices (1024px and larger) */
+@media only screen and (min width: 1024px) {
+}
+
+/* X-large devices (1440px and larger) */
+@media only screen and (min width: 1440px) {
 }

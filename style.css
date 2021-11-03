@@ -79,6 +79,7 @@ a {
 color: #060C14;
 text-decoration: none;
 cursor: pointer;
+font-weight: 400;
 }
 
 a:hover,
@@ -117,7 +118,6 @@ z-index: 2;
   color: #21243D;
   border-bottom: 1px solid #21243D;
 }
-
 
 header .logo {
 font-family: 'Heebo', sans-serif;
@@ -158,6 +158,52 @@ list-style-type: none;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
+}
+
+@keyframes {
+  width: 100%;
+max-width: 100%;
+height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* Layout Styling */
@@ -230,6 +276,7 @@ footer ul li a {
 margin: 0 8px;
 }
 
+
 /* Medium devices (640px and larger) */
 @media only screen and (min-width: 640px) {
   header {
@@ -241,6 +288,7 @@ body {
   font-size: 18px
   text-align: unset;
 }
+
 
 .row {
        width: 100%;
@@ -331,7 +379,7 @@ body {
 
     .col-lg-3 {
    width: 30%;
-   
+
 
 }
 

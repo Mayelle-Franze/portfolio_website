@@ -5,11 +5,10 @@
   <meta name="viewpoint" content="width=device=width, initial-scale=1">
   <meta charset="utf-8">
   <meta name="description" content="Mayelle Franze UI/UX Designer">
-  <title>Mayelle Franze</title>
+  <title >Mayelle Franze</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
-
 
     <link rel="apple_touch_icon" sizes="180x180" href="favicon_package/apple_touch_icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon_package/favicon_32x32.png">
@@ -21,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/0a853000ba.js" crossorigin="anonymous"></script>
+
   </head>
 
 <body>
@@ -28,21 +30,22 @@
   <!-- START HEADER SECTION -->
   <header>
     <!-- open header section for logo and menu -->
-    <div>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
       <!-- open inner container -->
       <a class="logo" href="index.html">Mayelle Franze</a>
-      <nav>
+      <nav class="headernav">
         <ul>
           <li><a href="index.html"> Work</a></li>
           <li><a href="about.html"> About</a></li>
           <li><a href="#contact"> Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div> <!-- end inner container -->
   </header> <!-- end header -->
   <!-- END of HEADER  -->
-
-
   <!-- START MAIN SECTION -->
   <main>
     <div>
@@ -236,6 +239,10 @@
 </div>
 </footer> <!-- end footer -->
 <!-- END Footer SECTION -->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 

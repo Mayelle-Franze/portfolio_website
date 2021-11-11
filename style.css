@@ -343,8 +343,9 @@ display: table;
 
   nav {
 display: flex;
- float: none;
+justify-content: flex-end;
   }
+
     ul {
    margin: 4px  auto 0 auto;
  display: block;
@@ -368,6 +369,10 @@ nav > ul {
 
     .navtoggle li:last-child {
   display: none;
+}
+
+.navtoggle.responsive nav {
+padding: 24px 0 0;
 }
 
 #about-page h3 {margin-top:0;}

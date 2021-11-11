@@ -80,7 +80,7 @@ margin-top: 50px;
 img {
 width: 100%;
 display: block;
-margin: 0 auto;
+margin:30px auto 30px auto;
 }
 
 
@@ -304,6 +304,10 @@ transform: scale(1.1);
     padding: 30px;
   }
 
+  .main-container{
+  margin: 90px auto 0 auto;
+  }
+
 body {
   font-size: 18px;
   text-align: unset;
@@ -374,6 +378,13 @@ nav > ul {
 .navtoggle.responsive nav {
 padding: 24px 0 0;
 }
+
+img {
+width: 100%;
+display: block;
+margin:auto;
+}
+
 
 #about-page h3 {margin-top:0;}
 

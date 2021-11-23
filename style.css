@@ -332,10 +332,7 @@ footer ul li a svg:hover {
     width: 100%;
   }
 
-  .row::after. {
-    content: "";
-    display: table;
-}
+
 
   [class*="col-"] {
     float: left;
@@ -410,6 +407,10 @@ footer ul li a svg:hover {
   #hero span {
     display: block;
   }
+
+    }
+
+
 
   /* Large devices (1024px and larger) */
   @media only screen and (min-width: 1024px) {
